@@ -22,3 +22,9 @@ for number1 in input:
             if sum_result == 2020:
                 print(number1 * number2 * number3)
                 break
+        else:
+            continue
+        break
+    else:
+        continue
+    break
