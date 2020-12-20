@@ -5,6 +5,7 @@ with open("input.txt", "r") as input_file:
 
 input_list = [line.strip() for line in input_list]
 
+
 def check_password(first_position, second_position, letter, password):
     i = 0
     if password[int(first_position) - 1] == letter:
@@ -17,7 +18,9 @@ def check_password(first_position, second_position, letter, password):
     else:
         return False
 
+
 regex = re.compile("(\d+)-(\d+) (\w): (\w+)")
+
 
 def interpret_line(input_string):
     matches = regex.search(input_string)
